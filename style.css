@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("assets/background.png");
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quizGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid orange;
+    padding: 30px 40px 30px 40px;
+    border-radius: 20px;
+    background: #5971F7;
+    color: orange;
+    /* width: 450px; */
+}
+
+.app-name {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.question-section{
+    font-size: 1.5rem;
+    color: red;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.question-section img{
+    width: 50px;
+    margin-bottom: 10px;
+    border: 1px solid red;
+}
+
+.user-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.user-details h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: mediumblue;
+    margin-bottom: 5px;
+    border-right: 1px solid mediumblue;
+    padding-right: 5px;
+    margin-left: 5px;
+}
+
+.user-details h3:first-of-type{
+    margin-left: 0px;
+}
+
+.user-details h3:last-of-type{
+    padding-right: 0px;
+    border-right: none;
+}
+
+.user-name {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 18px 5px;
+    font-size: 1rem;
+    color: #5971F7;
+    border: 1px solid #5971F7;
+}
+
+::placeholder {
+    color: #5971F7;
+}
+
+button{
+    background: white;
+    transition: 0.5S ease all;
+    width: 100%;
+    border: 1px solid #5971F7;
+    color: orange;
+    font-weight: 500;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.quiz-game-div{
+    width: 100%;
+    display: none;
+}
+
+.quiz-game-div button{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 55px;
+    border-radius: 15px;
+    border-width: 2px;
+}
+
+.quiz-game-div button span:first-of-type{
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+button:hover{
+    background: orange;
+    color: white;
+}
+
+
+.country-image{
+    display: none;
+}
+
+.pointer-event{
+    pointer-events: none;
+}
+
+.choose-button{
+    position: relative;
+}
+
+.fa-check{
+    right: 15px;
+    position: absolute;
+}
+
+.fa-close{
+    right: 18px;
+    position: absolute;
+}
+
+.next-question{
+    justify-content: center;
+    background: mediumblue;
+    color: white;
+}
+
+.question{
+    border: 1px solid mediumblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.capital-name{
+    color: black;
+}
+
+.trophy{
+    border: none !important;
+    width: 100px !important;
+}
+
+.ended{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ended h3{
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.show-result{
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.show-result span{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.again-button{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
